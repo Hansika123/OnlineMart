@@ -1,0 +1,618 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="theme-color" content="#2196f3">
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
+    <title>Framework7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/framework7/2.0.10/css/framework7.min.css">
+    <link rel="stylesheet" href="framework7-icons-master/css/framework7-icons.css">
+
+</head>
+<body class="theme-dark">
+    <div id="app">
+        <div class="statusbar"></div>
+        <div class="panel panel-left panel-cover">
+            <div class="view view-init view-left" name="left" data-url="/">
+                <div class="page color-theme-orange bg-color-white">
+                    <div class="navbar">
+                        <div class="navbar-inner sliding">
+                            <div class="title">
+                                <i class="f7-icons">bars </i>  Main menu
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <ul style="list-style-type:none">
+                            <li>
+                                <img src="photo/shop.png" width="234" height="128" />
+                            </li>
+                        </ul>
+                        <div class="block">
+                            <p>
+                                <!-- In data-popover attribute we specify CSS selector of popover we need to open -->
+                                <a class="link popover-open button" href="#" data-popover=".popover-about"><b>About Us</b></a>
+                            </p>
+                            <p>
+                                <!-- Load page with login screen-->
+                                <a href="Training_Page.html" class="button login-screen-open"><b>Home</b></a>
+                            </p>
+                            <p class="text-color-black">
+
+                                <!-- Open in login screen-modal that is already in DOM-->
+                                <a href="#" class="button login-screen-open" data-login-screen=".login-screen"><b>Login</b></a>
+                            </p>
+                            <p>
+                                <!-- Load page with login screen-->
+                                <a href="connectedPage.html" class="button login-screen-open"><b>Register</b></a>
+                            </p>
+                            <p><a href="#" data-popup=".my-popup" class="popup-open button"><b>Contact Us</b> </a></p>
+                            <p><a class="link sheet-open button" href="#" data-sheet=".my-sheet"><b>Today's Obsession</b></a></p>
+                            <p><a class="ac-6 button" href="#"><b>Share</b></a></p>
+                        </div>
+
+                        <div class="login-screen">
+                            <div class="view">
+                                <div class="page color-theme-orange">
+                                    <div class="page-content login-screen-content">
+                                        <div class="login-screen-title"><p class="text-color-orange"><i>Welcome To<br>Amazing online shopping experience</i><p></div>
+                                        <form>
+                                            <div class="list">
+                                                <ul>
+                                                    <li class="item-content item-input">
+                                                        <div class="item-inner">
+                                                            <div class="item-title item-label">Username</div>
+                                                            <div class="item-input-wrap">
+                                                                <input type="text" name="username" placeholder="Your username">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item-content item-input">
+                                                        <div class="item-inner">
+                                                            <div class="item-title item-label">Password</div>
+                                                            <div class="item-input-wrap">
+                                                                <input type="password" name="password" placeholder="Your password">
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="list">
+                                                <ul>
+                                                    <li>
+                                                        <label class="item-checkbox item-content">
+                                                            <input type="checkbox" name="demo-checkbox" value="Agree" checked="checked" />
+                                                            <i class="icon icon-checkbox"></i>
+                                                            <div class="item-inner">
+                                                                <div class="item-title">Remember  Username</div>
+                                                            </div>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p><center><a href="# " class="text-color-black">Forgotten your  username or  password?</a></center></p>
+                                            <div class="list">
+                                                <div class="block">
+                                                    <p>
+                                                        <a class="button button-raised open-full" href="#">Sign In</a>
+                                                    </p>
+
+                                                </div>
+
+                                                <div class="block-footer">
+
+                                                    <button class=" col button button-raised "><p><a class="link login-screen-close" href="#">Close Login Screen</a></p></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-->....<-->
+                        <div class="popover popover-about">
+                            <div class="popover-inner">
+                                <div class="block">
+                                    <p>About Us</p>
+                                    <p>Provide purchasing service the latest men's ,women's and kid's fashion items online at ShoppingMark.com Srilanka's biggest online shopping mall. Available with worldwide delivery...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sheet-modal my-sheet color-theme-orange">
+                            <div class="toolbar">
+                                <div class="toolbar-inner">
+                                    <div class="left"></div>
+                                    <div class="right"><a class="link sheet-close" href="#">Done</a></div>
+                                </div>
+                            </div>
+                            <div class="sheet-modal-inner">
+                                <div class="block">
+                                    <h4>Today's Obsession</h4>
+
+
+                                    <div class="block-title display-flex justify-content-space-between">Price Filter <span class="price-value">$200 - $400</span></div>
+                                    <div class="list simple-list">
+                                        <ul>
+                                            <li class="item-row">
+                                                <div class="item-cell width-auto flex-shrink-0">
+                                                    <i class="icon f7-icons  md-only">money_dollar</i>
+                                                    <i class="icons  material-icons ios-only">attach_money</i>
+                                                </div>
+                                                <div class="item-cell item-cell-shrink-3">
+                                                    <!-- Dual range slider with all the parameters passed via data- attributes -->
+                                                    <div id="price-filter"
+                                                         class="range-slider range-slider-init color-green"
+                                                         data-label="true"
+                                                         data-dual="true"
+                                                         data-min="0"
+                                                         data-max="500"
+                                                         data-step="1"
+                                                         data-value-left="200"
+                                                         data-value-right="400">
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-cell width-auto flex-shrink-0">
+                                                    <i class="icon f7-icons md-only">money_dollar_fill</i>
+                                                    <i class="icon material-icons ios-only">monetization_on</i>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->><-->
+                            <div class="popup my-popup">
+                                <div class="view">
+                                    <div class="page color-theme-orange">
+                                        <div class="navbar">
+                                            <div class="navbar-inner">
+                                                <div class="title">Contact Us</div>
+                                                <div class="right">
+                                                    <!-- Link to close popup -->
+                                                    <a class="link popup-close">Home</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="page-content">
+                                            <div class="block ">
+                                                <center>
+                                                    <big>
+                                                        <b>
+                                                            view location<br>
+                                                        </b>
+                                                    </big>
+                                                    <a class="link" href="#"><img src="photo/map.JPG" width="300" height="150"></a>
+                                                </center>
+                                            </div>
+                                            <center>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td>
+                                                        <p>
+                                                            <i class="f7-icons color-black">persons</i>  Address:
+                                                    </td>
+                                                    <td>
+                                                        <br>
+                                                        Shopping Mart shop<br>
+                                                        30A, Malalasekera Mawatha,<br>
+                                                        Colombo 7,<br>
+                                                        Sri Lanka.
+                                                    </td>
+                                                </tr></p>
+                                                <tr>
+                                                    <td><p><i class="f7-icons color-custom">phone_fill</i>Telephon:</p></td>
+                                                    <td><br>+94 112 352 000 (General)<br>+9477/71-345 6345(whatsapp)</td>
+                                                </tr>
+                                                <tr><td><p><a class="link" href="#"><img src="photo/robo.png" width="34" />  </a> Inquiries :  </p></td><td>support@shoppingmart.lk</td></tr>
+
+                                            </table></center>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!----><-->
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-right panel-reveal">
+            <div class="view view-init view-right" name="right" data-url="/">
+                <div class="page color-theme-orange">
+                    <div class="navbar">
+                        <div class="navbar-inner sliding">
+                            <div class="title">
+                                <img src="photo/orange1.jpg" width="49" height="44" />  Cart
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content">
+                        <div class="list simple-list">
+                            <ul>
+                                <li>
+                                    <span>Login</span>
+                                    <label class="toggle toggle-init color-red">
+                                        <input type="checkbox" checked>
+                                        <span class="toggle-icon"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="block-title"> Your online order can place here.</div>
+                        <p><b>Your Shopping Cart is empty</b><br></p>
+                        <p>Your Shopping Cart lives to serv. Give it purpose-Fill it with Sarees, Accessaries, Foot wears and more.</p>
+                        <p>Continue Shopping on the home page</p>
+                        <div class="block">
+                            <p class="row">
+                                <button class="col button button-raised">Continue</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view view-main view-init ios-edges" data-url="/">
+            <div class="page color-theme-orange bg-color-white">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link  panel-open" data-panel="left">
+                                <i class="f7-icons">bars</i>
+                            </a>
+                        </div>
+                        <div class="title sliding">Online Mart</div>
+                        <div class="right">
+                            <a class="link popup-open" href="#" data-popup=".popup-about">
+                                <i class="f7-icons">search_strong</i>
+                            </a>
+                            <div class="popup popup-about">
+                                <div class="block">
+                                    <center> <p class=" text-color-orange"><i class="f7-icons color-white">star_fill</i><big><big> Shopping Mart</big></b></p></center>
+                                </div>
+                                <!-- Close Popup -->
+
+                                <div class="page color-theme-black ">
+                                    <div class="navbar">
+                                        <div class="navbar-inner">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="page-content">
+                                        <div class="searchbar-backdrop"></div>
+
+                                        <!-- Searchbar with "searchbar-init" class for auto initialization and searchContainer, searchIn parameters passed in data- attributes  -->
+                                        <form class="searchbar searchbar-init" data-search-container=".search-here">
+                                            <div class="searchbar-inner">
+                                                <div class="searchbar-input-wrap">
+                                                    <input type="search" placeholder="Search" />
+                                                    <i class="searchbar-icon"></i>
+                                                    <span class="input-clear-button"></span>
+                                                </div>
+                                                <span class="input-clear-button"></span>
+                                                <span class="searchbar-disable-button">Cancel</span>
+                                            </div>
+                                        </form>
+                                        <div class="searchbar-backdrop"></div>
+                                        <div class="list searchbar-found">
+                                            <ul>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Babygirls clover clothes</div>
+                                                    </div>
+                                                </li>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Baby Romper </div>
+                                                    </div>
+                                                </li>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Gent's Formal wear </div>
+                                                    </div>
+                                                </li>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Gent's party wear</div>
+                                                    </div>
+                                                </li>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Ladies' Casual wear</div>
+                                                    </div>
+                                                </li>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Ladies' party dress</div>
+                                                    </div>
+                                                </li>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Newborn Baby clothes</div>
+                                                    </div>
+                                                </li>
+                                                <li class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-title">Sheath Dress</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="list simple-list searchbar-not-found">
+                                            <ul>
+                                                <li>Nothing found</li>
+                                            </ul>
+                                        </div>
+                                        <div class="block"> <center> <a class="link popup-close" href="#"><button class=" col button button-big button-raised text-color-orange"><b>Go To Home </b></button></a></center></div>
+                                    </div>
+                                </div>
+                                    </div>
+                            <a href="#" class="link panel-open" data-panel="right">
+                                <img src="photo/orange1.jpg" width="49" height="44" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                    <div class="page">
+                        <div class="page-content">
+                            
+                                    <div class="title"><p class="text-color-white"> Register here!<p></div>
+                             
+                            <p class="text-color-blue"></p>
+                            <div class="list inline-labels no-hairlines-md">
+                                <ul>
+                                    <li class="item-content item-input">
+                                        <div class="item-media">
+                                            <i class="icon demo-list-icon"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Full Name</div>
+                                            <div class="item-input-wrap">
+                                                <input type="text" placeholder="Your  full name">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                        <div class="item-media">
+                                            <i class="icon demo-list-icon"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">DOB</div>
+                                            <div class="item-input-wrap">
+                                                <input type="date" value="2014-04-30" placeholder="Please choose...">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                        <div class="item-media">
+                                            <i class="icon demo-list-icon"></i>
+                                        </div>
+                                        <div class="item-inner ">
+                                            <div class="item-title item-label">Country</div>
+                                            <div class="item-input-wrap">
+                                                
+                                                <select placeholder="Please choose... text-color-black">
+
+                                                        <option value="sec">Select</option>
+                                                        <option value="India">India</option>
+                                                        <option value="Srilanka">Sri lanka</option>
+                                                        <option value="usa">USA</option>
+                                                        <option value="uk">UK</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                        <div class="item-media">
+                                            <i class="icon demo-list-icon"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">E-mail</div>
+                                            <div class="item-input-wrap">
+                                                <input type="email" placeholder="Your e-mail">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item-content item-input">
+                                        <div class="item-media">
+                                            <i class="icon demo-list-icon"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Password</div>
+                                            <div class="item-input-wrap">
+                                                <input type="password" placeholder="Your password">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="item-content item-input">
+                                        <div class="item-media">
+                                            <i class="icon demo-list-icon"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div class="item-title item-label">Repassword</div>
+                                            <div class="item-input-wrap">
+                                                <input type="password" placeholder="Retype the password">
+                                                <span class="input-clear-button"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <label class="item-checkbox item-content">
+                                            <input type="checkbox" name="demo-checkbox" value="Robot" checked="checked" />
+                                            <i class="icon icon-checkbox"></i>
+                                            <div class="item-inner">
+                                                <div class="item-title">I'm not a robot..!</div>
+                                            </div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="block">
+                                <p>
+                                    <a class="button button-raised open-full" href="#">Register Now</a>
+                                </p>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/framework7/2.0.10/js/framework7.min.js"></script>
+                <script>
+                var $ = Dom7;
+
+                var routes = [
+                        {
+                       path: '/TestLinkPage/',
+                      url: 'connectedPage.html',
+                      name: 'Connected',
+                   },
+                ];
+
+                // Theme
+                var theme = 'auto';
+                if (document.location.search.indexOf('theme=') >= 0) {
+                    theme = document.location.search.split('theme=')[1].split('&')[0];
+                }
+
+                var app = new Framework7({
+                    id: 'io.framework7.testapp',
+                    root: '#app',
+                    theme: theme,
+                    data: function () {
+                        return {
+                            user: {
+                                firstName: 'John',
+                                lastName: 'Doe',
+                            },
+                        };
+                    },
+                    methods: {
+                        helloWorld: function () {
+                            app.dialog.alert('Hello World!');
+                        },
+                    },
+                    routes: routes,
+                    vi: {
+                        placementId: 'pltd4o7ibb9rc653x14',
+                    },
+                });
+                var calendarDefault = app.calendar.create({
+                    inputEl: '#demo-calendar-default',
+                });
+
+                var app = new Framework7();
+
+                var $$ = Dom7;
+
+                // Create full-layout notification
+                var notificationFull = app.notification.create({
+                    icon: '<i class="icon demo-icon"></i>',
+                    title: 'Shopping Mart',
+                    titleRightText: '',
+                    subtitle: 'WELCOME to Amazing the shopping experience..!',
+                    text: 'Your Resgistration Successful.',
+                    closeTimeout: 3000,
+                });
+
+                // Open Notifications
+                $$('.open-full').on('click', function () {
+                    notificationFull.open();
+                });
+
+                $$(document).on("click", "#button", function (e) {
+
+                    e.preventDefault();
+                    app.dialog.confirm('You clicked on this button', function () {
+                        console.log("clicked");
+                    });
+                });
+
+                var $$ = Dom7;
+
+                var app = new Framework7({
+                    routes: [{
+                        path: '/login-screen/',
+                        url: 'Training_Page.html',
+                        name: 'login-screen',
+
+                    }]
+                });
+                $$('.login-screen').on('loginscreen:open', function (e, loginScreen) {
+                    console.log('Login screen open')
+                });
+                $$('.login-screen').on('loginscreen:opened', function (e, loginScreen) {
+                    console.log('Login screen opened')
+                });
+                $$('.login-screen').on('loginscreen:close', function (e, loginScreen) {
+                    console.log('Login screen close')
+                });
+                $$('.login-screen').on('loginscreen:closed', function (e, loginScreen) {
+                    console.log('Login screen closed')
+                });
+
+                //- Actions Grid
+                var ac6 = app.actions.create({
+                    grid: true,
+                    buttons: [
+                      [
+                        {
+                            text: 'Twitter',
+                            icon: '<img src="/photo/tweet.png" width="48"/>'
+                        },
+                        {
+                            text: 'Faccebook',
+                            icon: '<img src="/photo/face.png" width="48">'
+                        },
+                        {
+                            text: 'Google+',
+                            icon: '<img src="/photo/g.jpg" width="48">'
+                        },
+                      ],
+                      [
+                        {
+                            text: 'Gmail',
+                            icon: '<img src="photo/gmail.png" width="48"/>'
+                        },
+                        {
+                            text: 'imo',
+                            icon: '<img src="photo/imo.jpg" width="48">'
+                        },
+                        {
+                            text: 'Whatsapp',
+                            icon: '<img src="/photo/whtsp.png" width="48">'
+                        },
+                      ]
+                    ]
+                });
+                $$('.ac-6').on('click', function () {
+                    ac6.open();
+                });
+
+                </script>
+</body>
+</html>
